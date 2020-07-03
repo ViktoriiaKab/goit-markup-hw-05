@@ -22,6 +22,9 @@ html {
     padding-right: 15px;
 }
 
+img {
+    display: block;
+}
 
 body {
     background-color: #FFFFFF;
@@ -35,6 +38,7 @@ ul {
     margin: 0;
     list-style: none;
 }
+
 .page-header {
     background-color: #FFFFFF;
     border: 1px solid #ECECEC;
@@ -391,8 +395,8 @@ ul {
 
     fill: #afb1b8;
     
-     transition: background-color 250ms 
-  cubic-bezier(0.4, 0, 0.2, 1), var(--secondory-title-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms 
+   cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -407,8 +411,6 @@ ul {
   background-color: #2196f3;
   fill: #ffffff;
   border-radius: 50%;
-
-
 }
 
 .social-links .band-instagram-icon-sprite svg{
@@ -498,6 +500,7 @@ ul {
     border-radius: 4px;  
     
     cursor: pointer;
+
 }
 
 .section-clients .logos {
@@ -508,7 +511,7 @@ ul {
 .section-clients .link:focus {
     border-color: #2196F3;
 
-    transition: 250ms;
+    transition: border 250ms;
     transition-timing-function: cubic-bezier(0.4, 0 0.2, 1);
 }
 
@@ -631,7 +634,6 @@ ul {
   }
   
 
-
 .button-second {
     display: inline-flex;
     align-items: center;
@@ -736,15 +738,23 @@ ul {
     justify-content: space-between;
 }
 
+.examples-main .link {
+    display: block;
+    text-decoration: none;
+}
+
 .examples-main .item {
-    margin-bottom: 30px;
+    position: relative;
     overflow: hidden;
+
+    margin-bottom: 30px;
    
-    border-radius: 5px;
     cursor: pointer;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    box-sizing: border-box;
+    border-radius: 5px;
+
+    border-top: transparent;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -767,11 +777,13 @@ ul {
   }
 
   .hidden-text {
+    display: flex;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
     padding: 63px 24px;
     font-size: 18px;
     line-height: 1.6;
@@ -796,7 +808,6 @@ ul {
 
   .captions {
     padding: 20px 24px;
-    
   }
 
   .examples-title {
@@ -804,10 +815,11 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    text-decoration: none;
+    
     margin-top: 0px;
     margin-bottom: 4px; 
     color: #212121;
+    
   }
 
   .examples-text {
@@ -816,12 +828,12 @@ ul {
     line-height: 1.87;
     letter-spacing: 0.03em;
 
-    text-decoration: none;
+
     margin-top: 0px;
     margin-bottom: 0px;
     
     color: #757575;
-    text-decoration: none;
+    
   }
 
 
